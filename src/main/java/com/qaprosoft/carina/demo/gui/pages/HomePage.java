@@ -42,6 +42,12 @@ public class HomePage extends AbstractPage {
 
     @FindBy(className = "news-column-index")
     private ExtendedWebElement newsColumn;
+    
+    @FindBy(className = "news-column-index")
+    private ExtendedWebElement newsColumn1;
+    
+    @FindBy(className = "news-column-index")
+    private ExtendedWebElement newsColumn2;
 
     public HomePage(WebDriver driver) {
         super(driver);
