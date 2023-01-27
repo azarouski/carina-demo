@@ -17,6 +17,15 @@ public class AttachFilePage extends AbstractPage {
 
     @FindBy(id = "content")
     private ExtendedWebElement content;
+    
+    @FindBy(id = "content")
+    private ExtendedWebElement content1;
+    
+    @FindBy(id = "content")
+    private ExtendedWebElement content2;
+    
+    @FindBy(id = "content")
+    private ExtendedWebElement content3;
 
     public AttachFilePage(WebDriver driver) {
         super(driver);
