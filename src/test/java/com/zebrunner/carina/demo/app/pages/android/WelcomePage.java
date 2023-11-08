@@ -1,7 +1,7 @@
-package com.zebrunner.carina.demo.mobile.gui.pages.android;
+package com.zebrunner.carina.demo.app.pages.android;
 
-import com.zebrunner.carina.demo.mobile.gui.pages.common.LoginPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.WelcomePageBase;
+import com.zebrunner.carina.demo.app.pages.common.LoginPageBase;
+import com.zebrunner.carina.demo.app.pages.common.WelcomePageBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 

@@ -1,4 +1,4 @@
-package com.zebrunner.carina.demo.utils;
+package com.zebrunner.carina.demo.app.utils;
 
 import java.lang.invoke.MethodHandles;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.zebrunner.carina.demo.mobile.gui.pages.common;
+package com.zebrunner.carina.demo.app.pages.common;
 
 import org.openqa.selenium.WebDriver;
 

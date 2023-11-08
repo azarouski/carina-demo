@@ -13,21 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.zebrunner.carina.demo;
+package com.zebrunner.carina.demo.test;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.zebrunner.carina.core.IAbstractTest;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.CarinaDescriptionPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.ContactUsPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.LoginPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.UIElementsPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.WebViewPageBase;
-import com.zebrunner.carina.demo.mobile.gui.pages.common.WelcomePageBase;
-import com.zebrunner.carina.demo.utils.MobileContextUtils;
-import com.zebrunner.carina.demo.utils.MobileContextUtils.View;
+import com.zebrunner.carina.demo.app.pages.common.CarinaDescriptionPageBase;
+import com.zebrunner.carina.demo.app.pages.common.ContactUsPageBase;
+import com.zebrunner.carina.demo.app.pages.common.LoginPageBase;
+import com.zebrunner.carina.demo.app.pages.common.UIElementsPageBase;
+import com.zebrunner.carina.demo.app.pages.common.WebViewPageBase;
+import com.zebrunner.carina.demo.app.pages.common.WelcomePageBase;
+import com.zebrunner.carina.demo.app.utils.MobileContextUtils;
+import com.zebrunner.carina.demo.app.utils.MobileContextUtils.View;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.utils.mobile.IMobileUtils;

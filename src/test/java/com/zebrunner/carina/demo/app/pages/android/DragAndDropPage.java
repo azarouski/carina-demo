@@ -1,4 +1,4 @@
-package com.zebrunner.carina.demo.mobile.gui.pages.android;
+package com.zebrunner.carina.demo.app.pages.android;
 
 import java.time.Duration;
 

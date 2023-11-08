@@ -1,6 +1,6 @@
-package com.zebrunner.carina.demo.mobile.gui.pages.android;
+package com.zebrunner.carina.demo.app.pages.android;
 
-import com.zebrunner.carina.demo.mobile.gui.pages.common.ChartsPageBase;
+import com.zebrunner.carina.demo.app.pages.common.ChartsPageBase;
 import org.openqa.selenium.WebDriver;
 
 import com.zebrunner.carina.utils.factory.DeviceType;
