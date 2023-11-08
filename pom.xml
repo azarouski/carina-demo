@@ -20,6 +20,8 @@
 		<carina-azure.version>1.1.4</carina-azure.version>
 		<carina-appcenter.version>1.1.5</carina-appcenter.version>
 
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<java.version>11</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
