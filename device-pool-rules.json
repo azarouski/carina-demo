@@ -1,0 +1,7 @@
+[
+    {
+        "attribute": "PLATFORM",
+        "operator": "EQUALS",
+        "value": "\"ANDROID\""
+    }
+]
