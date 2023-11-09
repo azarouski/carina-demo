@@ -1,0 +1,10 @@
+/home/project/src/test/java/com/browserstack/app/pages/BasePage.java
+/home/project/src/test/java/com/browserstack/test/utils/MobileHelper.java
+/home/project/src/test/java/com/browserstack/app/pages/HomePage.java
+/home/project/src/test/java/com/browserstack/test/suites/user/UserTest.java
+/home/project/src/test/java/com/browserstack/app/pages/CheckoutPage.java
+/home/project/src/test/java/com/browserstack/app/pages/LoginPage.java
+/home/project/src/test/java/com/browserstack/test/suites/TestBase.java
+/home/project/src/test/java/com/browserstack/app/pages/CartPage.java
+/home/project/src/test/java/com/browserstack/app/pages/OrdersPage.java
+/home/project/src/test/java/com/browserstack/app/pages/ConfirmationPage.java
