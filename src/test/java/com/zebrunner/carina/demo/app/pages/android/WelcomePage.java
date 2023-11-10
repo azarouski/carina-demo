@@ -1,36 +1,29 @@
 package com.zebrunner.carina.demo.app.pages.android;
 
-import com.zebrunner.carina.demo.app.pages.common.LoginPageBase;
-import com.zebrunner.carina.demo.app.pages.common.WelcomePageBase;
-import org.openqa.selenium.WebDriver;
+import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.zebrunner.carina.utils.factory.DeviceType;
-import com.zebrunner.carina.utils.factory.DeviceType.Type;
-import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 
-@DeviceType(pageType = Type.ANDROID_PHONE, parentClass = WelcomePageBase.class)
-public class WelcomePage extends WelcomePageBase {
+public class WelcomePage extends BasePage {
 
     @FindBy(id = "carina_logo")
-    private ExtendedWebElement title;
+    private WebElement title;
 
     @FindBy(id = "next_button")
-    private ExtendedWebElement nextBtn;
+    private WebElement nextBtn;
 
-    public WelcomePage(WebDriver driver) {
+    public WelcomePage(AppiumDriver<?> driver) {
         super(driver);
     }
 
-    @Override
     public boolean isPageOpened() {
-        return title.isElementPresent();
+        return title.isDisplayed();
     }
 
-    @Override
-    public LoginPageBase clickNextBtn() {
+    public LoginPage clickNextBtn() {
         nextBtn.click();
-        return initPage(getDriver(), LoginPageBase.class);
+        return new LoginPage(driver);
     }
 
 }

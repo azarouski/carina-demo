@@ -1,82 +1,68 @@
 package com.zebrunner.carina.demo.app.pages.android;
 
-import com.zebrunner.carina.demo.app.pages.common.LoginPageBase;
-import com.zebrunner.carina.demo.app.pages.common.CarinaDescriptionPageBase;
+import io.appium.java_client.AppiumDriver;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import com.zebrunner.carina.utils.factory.DeviceType;
-import com.zebrunner.carina.utils.factory.DeviceType.Type;
-import com.zebrunner.carina.utils.mobile.IMobileUtils;
-import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 
-@DeviceType(pageType = Type.ANDROID_PHONE, parentClass = LoginPageBase.class)
-public class LoginPage extends LoginPageBase implements IMobileUtils {
+public class LoginPage extends BasePage {
 
     @FindBy(id = "name")
-    private ExtendedWebElement nameInputField;
+    private WebElement nameInputField;
 
     @FindBy(id = "password")
-    private ExtendedWebElement passwordInputField;
+    private WebElement passwordInputField;
 
     @FindBy(id = "radio_male")
-    private ExtendedWebElement maleRadioBtn;
+    private WebElement maleRadioBtn;
 
     @FindBy(id = "radio_female")
-    private ExtendedWebElement femaleRadioBtn;
+    private WebElement femaleRadioBtn;
 
     @FindBy(id = "checkbox")
-    private ExtendedWebElement privacyPolicyCheckbox;
+    private WebElement privacyPolicyCheckbox;
 
     @FindBy(id = "login_button")
-    private ExtendedWebElement loginBtn;
+    private WebElement loginBtn;
 
-    public LoginPage(WebDriver driver) {
+    public LoginPage(AppiumDriver<?> driver) {
         super(driver);
     }
 
-    @Override
     public void typeName(String name) {
-        nameInputField.type(name);
-        hideKeyboard();
+        nameInputField.sendKeys(name);
     }
 
-    @Override
     public void typePassword(String password) {
-        passwordInputField.type(password);
+        passwordInputField.sendKeys(password);
     }
 
-    @Override
     public void selectMaleSex() {
         maleRadioBtn.click();
     }
 
-    @Override
     public void checkPrivacyPolicyCheckbox() {
         privacyPolicyCheckbox.click();
     }
 
-    @Override
-    public CarinaDescriptionPageBase clickLoginBtn() {
+    public CarinaDescriptionPage clickLoginBtn() {
         loginBtn.click();
-        return initPage(getDriver(), CarinaDescriptionPageBase.class);
+        return new CarinaDescriptionPage(driver);
     }
 
-    @Override
     public boolean isLoginBtnActive() {
         return Boolean.parseBoolean(loginBtn.getAttribute("enabled"));
     }
 
-    @Override
-    public CarinaDescriptionPageBase login() {
+    public void login() {
         String username = "Test user";
         String password = RandomStringUtils.randomAlphabetic(10);
         typeName(username);
         typePassword(password);
         selectMaleSex();
         checkPrivacyPolicyCheckbox();
-        return clickLoginBtn();
+        loginBtn.click();
     }
 
 }
