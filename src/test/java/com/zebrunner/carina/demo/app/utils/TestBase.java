@@ -6,17 +6,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 public class TestBase {
 
-    public AppiumDriver<?> driver;
+    public AppiumDriver driver;
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
         MutableCapabilities capabilities = new MutableCapabilities();
-        driver = new AppiumDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
 

@@ -13,7 +13,7 @@ public class WelcomePage extends BasePage {
     @FindBy(id = "next_button")
     private WebElement nextBtn;
 
-    public WelcomePage(AppiumDriver<?> driver) {
+    public WelcomePage(AppiumDriver driver) {
         super(driver);
     }
 

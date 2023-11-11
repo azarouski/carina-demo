@@ -26,7 +26,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "login_button")
     private WebElement loginBtn;
 
-    public LoginPage(AppiumDriver<?> driver) {
+    public LoginPage(AppiumDriver driver) {
         super(driver);
     }
 

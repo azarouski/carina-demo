@@ -10,7 +10,7 @@ public class CarinaDescriptionPage extends BasePage {
     @FindBy(id = "content_frame")
     private WebElement webViewContent;
 
-    public CarinaDescriptionPage(AppiumDriver<?> driver) {
+    public CarinaDescriptionPage(AppiumDriver driver) {
         super(driver);
     }
 

@@ -9,7 +9,7 @@
         </ReportingAppender>
     </appenders>
     <loggers>
-        <root level="info">
+        <root level="debug">
             <appender-ref ref="ReportingAppender"/>
         </root>
     </loggers>
