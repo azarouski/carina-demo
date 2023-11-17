@@ -16,6 +16,7 @@ public class TestBase {
     public void setUp() throws Exception {
         MutableCapabilities capabilities = new MutableCapabilities();
         driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+//        driver = new AppiumDriver(new URL("https://demo.zebrunner.farm/mcloud/wd/hub"), capabilities);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 

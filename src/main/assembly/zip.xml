@@ -22,5 +22,12 @@
                 <include>/dependency-jars/</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory>./</outputDirectory>
+            <includes>
+                <include>/agent/</include>
+            </includes>
+        </fileSet>
     </fileSets>
 </assembly>
