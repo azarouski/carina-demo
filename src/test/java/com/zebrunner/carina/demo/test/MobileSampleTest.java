@@ -15,8 +15,6 @@ import java.lang.invoke.MethodHandles;
 
 public class MobileSampleTest extends TestBase {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-
     @Test()
     public void testLoginUser() {
         LOGGER.info("Test start");
